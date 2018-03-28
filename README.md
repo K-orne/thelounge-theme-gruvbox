@@ -7,3 +7,5 @@ you should be able to install this with:
 ```
 thelounge install thelounge-theme-zenburn-monospace
 ```
+
+![](preview.png)
