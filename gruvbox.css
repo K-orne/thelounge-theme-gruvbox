@@ -20,13 +20,13 @@ QUIT #bc6c4c
 */
 
 * {
-    font-family: 'IBM Plex Mono', Consolas, monospace;
+    font-family: "IBM Plex Mono", Consolas, monospace;
 }
 
 body {
     background: #282828;
     color: #ebdbb2;
-    font-family: 'IBM Plex Mono', Consolas, monospace;
+    font-family: "IBM Plex Mono", Consolas, monospace;
 }
 
 .logo {
@@ -89,6 +89,7 @@ body {
 /* User list */
 #chat .user-mode {
     color: #ebdbb2;
+    background-color: #282828
 }
 
 #chat .userlist .user.active {
@@ -184,7 +185,7 @@ body {
 }
 
 #chat .unread-marker-text::before {
-    background-color: #d79921;
+    background-color: #3c3836;
 }
 
 #chat .date-marker::before {
@@ -198,15 +199,15 @@ body {
 
 /* Setup text colors */
 #chat .msg {
-    color: #ffcfaf;
+    color: #98971a;
 }
 
 #chat .message {
     color: #ebdbb2;
 }
 
-#chat .self .text {
-    color: #504945;
+#chat .self .text .from {
+    color: #665c54;
 }
 
 #chat .error,
