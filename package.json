@@ -1,6 +1,6 @@
 {
   "name": "thelounge-theme-gruvbox",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "gruvbox monospace",
   "main": "package.json",
   "scripts": {

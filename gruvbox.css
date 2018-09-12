@@ -206,8 +206,16 @@ body {
     color: #ebdbb2;
 }
 
-#chat .self .text .from {
+#chat .self .text {
     color: #665c54;
+}
+
+#chat .self .from {
+    color: #665c54;
+}
+
+#chat .action .text {
+    color: #98971a;
 }
 
 #chat .error,
