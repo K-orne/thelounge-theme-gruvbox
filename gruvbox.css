@@ -1,0 +1,291 @@
+/*
+Zenburn theme for The Lounge.
+Based on the Morning Theme by Riku Rouvila
+Forked by github/benharri to use monospace fonts
+
+Installation instructions can be found here
+https://thelounge.chat/docs/server/configuration.html#theme
+
+Author: JP Smith
+GitHub: https://github.com/japesinator
+*/
+
+/*
+BACKGROUND #3f3f3f
+INPUT BACKGROUND #434443
+PRIMARY #ebdbb2
+SECONDARY #d2d39b
+BORDERS #665c54333
+QUIT #bc6c4c
+*/
+
+* {
+    font-family: 'IBM Plex Mono', Consolas, monospace;
+}
+
+body {
+    background: #282828;
+    color: #ebdbb2;
+    font-family: 'IBM Plex Mono', Consolas, monospace;
+}
+
+.logo {
+    display: none;
+}
+
+.logo-inverted {
+    display: inline-block;
+}
+
+#main,
+#chat .userlist,
+#windows .chan,
+#windows .window {
+    background: #1d2021;
+}
+
+#settings,
+#sign-in,
+#connect .title {
+    color: #928374;
+}
+
+#settings,
+#sign-in,
+#connect .opt {
+    color: #928374;
+}
+
+#sidebar {
+    background: #282828;
+}
+
+#sidebar .chan .name::after {
+    background: linear-gradient(to right, rgba(43, 43, 43, 0) 0%, rgba(43, 43, 43, 1) 100%);
+}
+
+#footer {
+    background: #665c54;
+    border-top: 1px solid #1d2021;
+}
+
+#chat .userlist .count {
+    background-color: #434443;
+}
+
+#chat .userlist .search {
+    color: #928374;
+    padding: 15px 16px;
+}
+
+/* Borders */
+#chat .content,
+#windows .header,
+#chat .user-mode::before,
+#chat .userlist {
+    border-color: #665c54;
+}
+
+/* User list */
+#chat .user-mode {
+    color: #ebdbb2;
+}
+
+#chat .userlist .user.active {
+    background-color: #665c54;
+}
+
+/* Nicknames */
+#chat .user {
+    color: #665c54;
+}
+
+#chat.colored-nicks .user.color-1 { color: #f7adf7; }
+#chat.colored-nicks .user.color-2 { color: #abf99f; }
+#chat.colored-nicks .user.color-3 { color: #86efdc; }
+#chat.colored-nicks .user.color-4 { color: #ca95ec; }
+#chat.colored-nicks .user.color-5 { color: #f9a4b3; }
+#chat.colored-nicks .user.color-6 { color: #f7999a; }
+#chat.colored-nicks .user.color-7 { color: #f497b9; }
+#chat.colored-nicks .user.color-8 { color: #f9a9d7; }
+#chat.colored-nicks .user.color-9 { color: #8babe5; }
+#chat.colored-nicks .user.color-10 { color: #a8b8ff; }
+#chat.colored-nicks .user.color-11 { color: #b999fc; }
+#chat.colored-nicks .user.color-12 { color: #f4aead; }
+#chat.colored-nicks .user.color-13 { color: #fc82b5; }
+#chat.colored-nicks .user.color-14 { color: #ff77e1; }
+#chat.colored-nicks .user.color-15 { color: #8cb6ea; }
+#chat.colored-nicks .user.color-16 { color: #f98a81; }
+#chat.colored-nicks .user.color-17 { color: #ed9b82; }
+#chat.colored-nicks .user.color-18 { color: #8df484; }
+#chat.colored-nicks .user.color-19 { color: #ffcce3; }
+#chat.colored-nicks .user.color-20 { color: #efcc81; }
+#chat.colored-nicks .user.color-21 { color: #96a6ee; }
+#chat.colored-nicks .user.color-22 { color: #f4d484; }
+#chat.colored-nicks .user.color-23 { color: #97ea70; }
+#chat.colored-nicks .user.color-24 { color: #fcbbba; }
+#chat.colored-nicks .user.color-25 { color: #eef975; }
+#chat.colored-nicks .user.color-26 { color: #c7ff93; }
+#chat.colored-nicks .user.color-27 { color: #ffade1; }
+#chat.colored-nicks .user.color-28 { color: #98ecf2; }
+#chat.colored-nicks .user.color-29 { color: #95a5f5; }
+#chat.colored-nicks .user.color-30 { color: #b49eea; }
+#chat.colored-nicks .user.color-31 { color: #f2a4eb; }
+#chat.colored-nicks .user.color-32 { color: #85f27d; }
+
+#chat a {
+    color: #83a598;
+}
+
+/* Increase contrast of some IRC colors */
+.irc-fg2 { color: #1b94ff; }
+.irc-fg5 { color: #e969a7; }
+.irc-fg12 { color: #6fb7ff; }
+
+/* Message form */
+#form {
+    background: #665c54;
+    border-color: #1d2021;
+}
+
+#windows #form .input {
+    background-color: #3c3836 !important;
+    border-color: #1d2021 !important;
+    color: #ebdbb2 !important;
+}
+
+#form #nick {
+    background: #1d2021;
+    color: #ebdbb2;
+}
+
+#form #submit:hover {
+    opacity: 1;
+}
+
+/* Buttons */
+#chat .show-more-button {
+    background: #434443;
+    border-color: #101010;
+    color: #ebdbb2;
+}
+
+#chat .show-more-button:hover {
+    color: #fff;
+}
+
+#chat .header {
+    color: #d2d39b;
+}
+
+/* Notification dot on the top right corner of the menu icon */
+#viewport .lt::after {
+    border-color: #3f3f3f;
+}
+
+#chat .unread-marker-text::before {
+    background-color: #d79921;
+}
+
+#chat .date-marker::before {
+    border-color: #98971a;
+}
+
+#chat .date-marker-text::before {
+    background-color: #3f3f3f;
+    color: #a89984;
+}
+
+/* Setup text colors */
+#chat .msg {
+    color: #ffcfaf;
+}
+
+#chat .message {
+    color: #ebdbb2;
+}
+
+#chat .self .text {
+    color: #504945;
+}
+
+#chat .error,
+#chat .error .from,
+#chat .channel .highlight,
+#chat .channel .highlight .from,
+#chat .channel .highlight .text {
+    color: #cc241d;
+}
+
+#chat .unhandled .from {
+    color: #aaa;
+}
+
+#chat .msg.quit .time,
+#chat .msg.quit .from button {
+    color: #bc6c9c !important;
+}
+
+#chat .msg.topic {
+    color: #458588;
+}
+
+#chat .msg.join .time,
+#chat .msg.join .from button {
+    color: #98971a !important;
+}
+
+#chat table.channel-list td {
+    color: #ccc;
+}
+
+code,
+.irc-monospace {
+    background: #665c54;
+    color: #ebdbb2;
+}
+
+kbd {
+    color: #eee;
+    text-shadow: 0 -1px 0 #000;
+    border-color: #000;
+    background-color: #665c54;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+    box-shadow: 0 2px 0 #000, inset 0 1px 1px #777, inset 0 -1px 3px #222;
+}
+
+/* Previews */
+
+#chat .toggle-content {
+    background: #665c54;
+    color: #ebdbb2;
+}
+
+#chat .toggle-content .body {
+    color: #d2d39b;
+}
+
+/* Form elements */
+
+#chat-container ::-moz-placeholder {
+    color: #d2d39b;
+    opacity: 0.5;
+}
+
+#chat-container ::-webkit-input-placeholder {
+    color: #d2d39b;
+    opacity: 0.5;
+}
+
+#chat-container :-ms-input-placeholder {
+    color: #d2d39b;
+    opacity: 0.5;
+}
+
+/* End form elements */
+
+@media (min-width: 480px) {
+    #chat .from::after {
+        background: linear-gradient(to right, rgba(63, 63, 63, 0.5) 0%, rgba(63, 63, 63, 1) 100%);
+    }
+}
