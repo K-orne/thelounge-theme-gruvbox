@@ -225,6 +225,11 @@ body {
 #chat .channel .highlight .text {
     color: #cc241d;
 }
+#chat .channel .message.highlight {
+    background-color: #928374;
+    color: #cc241d;
+    border-left: 5px solid var(--highlight-border-color);
+}
 
 #chat .unhandled .from {
     color: #aaa;
