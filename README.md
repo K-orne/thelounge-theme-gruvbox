@@ -7,7 +7,7 @@ fork of [thelounge's zenburn](https://github.com/thelounge/thelounge/blob/v3.0.0
 you should be able to install this with:
 
 ```
-thelounge install thelounge-theme-zenburn-monospace
+thelounge install thelounge-theme-gruvbox
 ```
 
 ![](preview.png)
